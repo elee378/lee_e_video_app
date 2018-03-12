@@ -1,0 +1,38 @@
+#video-player{
+    position: absolute;
+    height: inherit;
+    bottom:0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width:100%;
+}
+/* layout.css Style */
+.drop-zone-container{
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    margin-top:25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.upload-drop-zone {
+    height: 100px;
+    border-width: 2px;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  
+  /* skin.css Style*/
+  .upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 100px;
+    text-align: center
+  }
+  .upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+  }
