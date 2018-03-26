@@ -46,12 +46,9 @@ body p{
 h1, h2, h3, h4, h5 {
       font-family: 'MavenPro-Regular';
 }
-/*Header Stats Start*/
 .header_stats{
 	text-align: center;
 }
-/*-- w3layouts --*/
-/*-- agileits --*/
 .header_stats h3{
 	font-size: 12px;
 	font-weight: 600;
@@ -792,11 +789,11 @@ footer  p a:hover{
   font-weight: 300;
 }
  /*--main-content--*/
-.music-left{
+.video-left{
  float:left;
  width:65%;
 }
-.music-right{
+.video-right{
  float:left;
  width:33%;
  margin-left:2%;
@@ -3219,7 +3216,7 @@ text-decoration:none;
 /*-- w3l-agile --*/
 /*-- agileits --*/
 @media (max-width:991px){
-	.music-left {
+	.video-left {
 		float: left;
 		width: 100%;
 	}
@@ -3230,7 +3227,7 @@ text-decoration:none;
 	.content-grid.last-grid {
 		margin-right: 1%;
 	}
-	.music-right {
+	.video-right {
 		float: left;
 		width: 65%;
 		margin-left: 2%;
@@ -3345,7 +3342,7 @@ text-decoration:none;
 /*-- w3l-agile --*/
 /*-- agileits --*/
 @media (max-width:991px){
-	.music-right {
+	.video-right {
 		float: left;
 		width: 80%;
 		margin-left: 2%;
@@ -3415,7 +3412,7 @@ text-decoration:none;
 	}
 }
 @media (max-width:800px){
-	.music-right {
+	.video-right {
 		float: left;
 		width: 80%;
 		margin-left: 2%;
@@ -3496,7 +3493,7 @@ text-decoration:none;
 	}
 }
 @media (max-width:768px){
-	.music-left {
+	.video-left {
 		float: left;
 		width: 100%;
 	}
@@ -3507,7 +3504,7 @@ text-decoration:none;
 	.content-grid.last-grid {
 		margin-right:0%;
 	}
-	.music-right {
+	.video-right {
 		float: left;
 		width: 80%;
 		margin-left: 2%;
@@ -3631,7 +3628,7 @@ text-decoration:none;
 	h4.tittle.two {
 		margin-left: 53%;
 	}
-	.music-right {
+	.video-right {
 		float: left;
 		width: 100%;
 		margin-left: 2%;
@@ -4284,7 +4281,7 @@ text-decoration:none;
 	div#page-wrapper {
 		padding: 5em 0.5em 2em 0.5em;
 	}
-	.music-right {
+	.video-right {
 		float: left;
 		width: 100%;
 		margin-left: 0;
