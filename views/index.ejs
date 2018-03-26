@@ -7,6 +7,7 @@
  <!-- Bootstrap Core CSS -->
 <link href="/assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
+<link href="/assets/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/style.css" rel='stylesheet' type='text/css' />
 <link href="/assets/css/font-awesome.css" rel="stylesheet"> 
 <link rel="stylesheet" href="/assets/css/icon-font.css" type='text/css' />
@@ -14,66 +15,72 @@
 <script src="/assets/js/jquery-2.1.4.js"></script>
 </head> 
 
- <body class="sticky-header left-side-collapsed"  onload="initMap()">
-    <section>
-		<div class="left-side sticky-left-side">
-			<div class="logo">
-				<h1><a href="index.html">V<span>Player</span></a></h1>
-			</div>
-			<div class="logo-icon text-center">
-				<a href="index.html">Vp</a>
-			</div>
+<body class="sticky-header left-side-collapsed"  onload="initMap()">
+	<section>
+			<div class="left-side sticky-left-side">
+				<div class="logo">
+					<h1><a href="index.html">V<span>Player</span></a></h1>
+				</div>
+				<div class="logo-icon text-center">
+					<a href="index.html">Vp</a>
+				</div>
 
-			<div class="left-side-inner">
+				<div class="left-side-inner">
 					<ul class="nav nav-pills nav-stacked custom-nav">
 						<li class="active"><a href="/"><i class="lnr lnr-home"></i><span>Home</span></a></li>
 						<li><a href="/categories"><i class="lnr lnr-indent-increase"></i> <span>Categories</span></a></li>						   
 					</ul>
-			</div>
-		</div>		
-		<div class="main-content">
-			<div class="header-section">
-			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
-			<div class="clearfix"></div>
 				</div>
-			<div id="page-wrapper">
-				<div class="inner-content">				
+			</div>	
+
+			<div class="main-content">
+				<div class="header-section">
+					<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+					<div class="clearfix"></div>
+				</div>
+				
+				<div id="page-wrapper">
+					<div class="inner-content">				
 					  <div class="video-left">
-					  <h5><%= videoPlay.title %></h5>
-							<div class="banner-section">
-								<div class="banner">
-									 <div class="callbacks_container">
-								 <div class="video-main">
-									<div class="video-record-list">
-										<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
-											<div class="jp-type-playlist">
-												<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img src="<%= videoPlay.posterSrc %>" style="height: 270px;width: 100%; display: inline;" id="poster-img">
-												<video autoplay  src="/movies/<%= videoPlay.videoId %>" id="video-player">
-												</video></div>
-												<div class="jp-gui">
-													<div class="jp-video-play" style="display: block;">
-														<button class="jp-video-play-icon" role="button" tabindex="0" id="video-play-button">play</button>
-													</div>
-													<div class="jp-interface">
-														<div class="jp-progress">
-															<div class="jp-seek-bar" style="width: 100%;" id="player-seek-bar">
-																<div class="jp-play-bar" style="width: 10%;" id="player-progress"></div>
+					  		<h5><%= videoPlay.title %></h5>
+								<div class="banner-section">
+									<div class="banner">
+										<div class="callbacks_container">
+								 			<div class="video-main">
+												<div class="video-record-list">
+													<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
+														<div class="jp-type-playlist">
+															<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px;"><img src="<%= videoPlay.posterSrc %>" style="height: 270px;width: 100%; display: inline;" id="poster-img">
+																<video autoplay  src="/movies/<%= videoPlay.videoId %>" id="video-player"></video>
 															</div>
-														</div>
-														<div class="jp-current-time" role="timer" aria-label="time" id="player-current">00:00</div>
-														<div class="jp-duration" role="timer" aria-label="duration" id="player-duration">00:18</div>
-														<div class="jp-controls-holder">
-															<div class="jp-controls">
-																<button class="jp-play" role="button" tabindex="0" id="video-player-pause">play</button>
-															</div>
-															<div class="jp-volume-controls">
-																<button class="jp-mute" role="button" tabindex="0">mute</button>
-																<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-																<div class="jp-volume-bar">
-																	<div class="jp-volume-bar-value" style="width: 50%;"></div>
+
+															<div class="jp-gui">
+																<div class="jp-video-play" style="display: block;">
+																	<button class="jp-video-play-icon" role="button" tabindex="0" id="video-play-button">play</button>
 																</div>
-															</div>
-															<div class="jp-toggles">
+
+																<div class="jp-interface">
+																	<div class="jp-progress">
+																		<div class="jp-seek-bar" style="width: 100%;" id="player-seek-bar">
+																			<div class="jp-play-bar" style="width: 10%;" id="player-progress"></div>
+																		</div>
+																	</div>
+
+																	<div class="jp-current-time" role="timer" aria-label="time" id="player-current">00:00</div>
+																	<div class="jp-duration" role="timer" aria-label="duration" id="player-duration">00:18</div>
+																	<div class="jp-controls-holder">
+																		<div class="jp-controls">
+																			<button class="jp-play" role="button" tabindex="0" id="video-player-pause">play</button>
+																		</div>
+																		<div class="jp-volume-controls">
+																			<button class="jp-mute" role="button" tabindex="0">mute</button>
+																			<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+																		<div class="jp-volume-bar">
+																			<div class="jp-volume-bar-value" style="width: 50%;"></div>
+																		</div>
+																	</div>
+																	<div class="jp-toggles"></div>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -81,66 +88,70 @@
 											</div>
 										</div>
 									</div>
-								</div>
-										</div>
 								<div class="clearfix"> </div>
 							</div>
+
 							<div class="video-details">
 								<div><%= videoPlay.videoDesc %></div>
 								<div class="star-rating">Ratings:<i class="fa fa-star"></i><i class="fa fa-star"></i>
-								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
 								</div>
 							</div>
 						</div>	
-							<link href="/assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
-						<div class="films">
-								<div class="tittle-head">
-									<h3 class="tittle">Top Videos</h3>
-									<div class="clearfix"> </div>
-								</div>
-<% topVideos.forEach(function(video){ %>
-	<div class="col-md-3 content-grid">
-			<a class="play-icon popup-with-zoom-anim" href="/videos/<%=video.videoId %>"><img src="<%=video.thumbnailSrc %>" title="allbum-name"></a>
-			<a class="button play-icon popup-with-zoom-anim" href="/videos/<%=video.videoId %>">Play now</a>
-		</div>		
-<% }); %>
+					<link href="/assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
+					<div class="films">
+						<div class="tittle-head">
+							<h3 class="tittle">Top Videos</h3>
 							<div class="clearfix"> </div>
-										</div>
-						<div class="films second" style="padding-top:0px">
-										<div class="tittle-head">
-											<h3 class="tittle">Categories</h3>
-											<a href="/categories"><h5 class="tittle" style="text-align:right;color:firebrick">See All Categories</h5></a>
-											<div class="clearfix"> </div>
-										</div>
-										<% categories.forEach(function(category){ %>
-											<div class="col-md-3 content-grid">
-												<a href="/categories/<%= category.categoryId %>"><img src="<%= category.thumbnailSrc%>" title="allbum-name"></a>
-												<div class="inner-info"><a href="/categories/<%= category.categoryId %>"><h5><%= category.name %></h5></a></div>
-											</div>
-										<% }); %>
-											<div class="clearfix"> </div>
-									</div>
-							</div>
-						   <div class="video-right">
-							<div class="films" style="padding-top:0px">
-								<div class="tittle-head">
-									<h5 class="tittle">Videos In category</h5>
-								</div>
-								<% videos.forEach(function(video){ %>
-								<div class="col-md-3 content-grid">
-										<a class="play-icon popup-with-zoom-anim" href="/videos/<%=video.videoId %>"><img src="<%=video.thumbnailSrc %>" title="allbum-name"></a>
-									</div>
-							<% }); %>
-							<div class="clearfix"> </div>
-							</div>
-							<link href="/assets/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
-							<div class="clearfix"></div>
-							</div>
-							</div>
-							<div class="clearfix"></div>
-					</div>
+						</div>
+
+					<% topVideos.forEach(function(video){ %>
+					<div class="col-md-3 content-grid">
+						<a class="play-icon popup-with-zoom-anim" href="/videos/<%=video.videoId %>"><img src="<%=video.thumbnailSrc %>" title="allbum-name"></a>
+						<a class="button play-icon popup-with-zoom-anim" href="/videos/<%=video.videoId %>">Play now</a>
+					</div>		
+					<% }); %>
+					
+					<div class="clearfix"></div>
+				</div>
+			
+			<div class="films second" style="padding-top:0px">
+				<div class="tittle-head">
+					<h3 class="tittle">Categories</h3>
+					<a href="/categories"><h5 class="tittle" style="text-align:right;color:firebrick">See All Categories</h5></a>
+					<div class="clearfix"> </div>
+				</div>
+				
+				<% categories.forEach(function(category){ %>
+				<div class="col-md-3 content-grid">
+					<a href="/categories/<%= category.categoryId %>"><img src="<%= category.thumbnailSrc%>" title="allbum-name"></a>
+					<div class="inner-info"><a href="/categories/<%= category.categoryId %>"><h5><%= category.name %></h5></a></div>
+				</div>
+				<% }); %>
+				<div class="clearfix"> </div>
 			</div>
-   </section>
+		</div>
+	
+	<div class="video-right">
+		<div class="films" style="padding-top:0px">
+			<div class="tittle-head">
+				<h5 class="tittle">Videos In category</h5>
+			</div>
+			<% videos.forEach(function(video){ %>
+			<div class="col-md-3 content-grid">
+				<a class="play-icon popup-with-zoom-anim" href="/videos/<%=video.videoId %>"><img src="<%=video.thumbnailSrc %>" title="allbum-name"></a>
+			</div>
+			<% }); %>
+		<div class="clearfix"> </div>
+	</div>
+	
+	<div class="clearfix"></div>
+	</div>
+	</div>
+	<div class="clearfix"></div>
+	</div>
+	</div>
+</section>
   
 <!-- Bootstrap Core JavaScript -->
 <script src="/assets/js/bootstrap.js"></script>

@@ -871,19 +871,7 @@ footer  p a:hover{
     margin-top:3%;
 	display:none;
 }
- .callbacks_nav:hover{
-  	opacity: 0.5;
-  }
-.callbacks_nav.next {
-  left: auto;
-    background-position: right top;
-   right:-140px;
- }
- .callbacks_nav.prev {
-	right: auto;
-    background-position: left top;
-    left: -140px;
-}
+
 #slider3-pager a {
   display: inline-block;
 }
@@ -933,61 +921,11 @@ footer  p a:hover{
   height: auto;
   border: 0;
   }
-.callbacks_tabs{
-       list-style: none;
-    position: absolute;
-    bottom: -13%;
-    right: 0%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    background: rgb(230, 228, 228);
-    padding: 5px 7px 11px 1px;
-    line-height: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -o-border-radius: 30px;
-    border: 1px solid #ccc;
-}
+
 .slider-top span{
 	font-weight:600;
 }
-.callbacks_tabs li{
-  display: inline-block;
-  margin: 0 .3em;
-}
-@media screen and (max-width: 600px) {
-  .callbacks_nav {
-    top: 47%;
-    }
-}
-/*----*/
-.callbacks_tabs a{
- visibility: hidden;
-}
-.callbacks_tabs a:after {
-    content: "\f111";
-  font-size: 0;
-  font-family: FontAwesome;
-  visibility: visible;
-  display: block;
-     width:14px;
-    height:14px;
-    display: block;
-    background:#EA57A3;
-  display: inline-block;
-  border:none;
-  border-radius:50%;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
-  -o-border-radius:50%;
-  -ms-border-radius:50%;
-  
-}
-.callbacks_here a:after{
-  background:#45B39D;
-}
+
 .banner-info {
     top: 62%;
     z-index: 999;
@@ -1076,49 +1014,8 @@ a.trend:hover {
     font-size:0.8725em;
     font-weight: 400;
 }
-#loginForm #body fieldset label{
-    display:block;
-    float:none;
-    margin:0 0 6px 0;
-	font-family: 'Open Sans', sans-serif;
-}
-#loginForm #login {
-  width: auto;
-  float: left;
-  background:#45B39D;
-  color: #fff;
-  font-size: 0.8725em;
-  padding: 7px 20px;
-  border: none;
-  margin: 0 12px 0 0;
-  cursor: pointer;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -o-transition: all .5s;
-  outline:none;
-  text-transform: uppercase;
-    border-radius:0.3em;
-  -o-border-radius:0.3em;
-  -webkit-border-radius:0.3em;
-  -moz-border-radius:0.3em;
-  font-family: 'Open Sans', sans-serif;
-  
-}
-#loginForm #login:hover{
-     background:#EA57A3;
-}
-#loginForm input {
-   width: 100%;
-  border: 1px solid #DADADA;
-  color: #222;
-  background: #FFF;
-  padding: 6px;
-  font-size: 0.8125em;
-  -webkit-apperance: none;
-  outline: none
-  font-family: 'Open Sans', sans-serif;
-}
+
+
 #body label i {
   color: #000;
   font-size: 1em;
