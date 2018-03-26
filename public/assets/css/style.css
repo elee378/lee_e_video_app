@@ -1067,106 +1067,7 @@ a.trend:hover {
     position: absolute;
     top: -22px;
 }
-/*-- wthree --*/
-/*-- agileits --*/
-/*--login-pop--*/
-#loginpop {
-	    position: relative;
-    float:left;
-}
-i.arrow {
-    font-size: 0.9em;
-  color: #fff;
-  vertical-align: baseline;
-  transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
-  }
-#loginpop a span:hover i.arrow{
-  color:#fff;
-  }
-#loginpop a{
-	text-decoration:none;
-}
-#loginpop a span{
-    display: block;
-    color: #EA57A3;
-    background: #111;
-    padding: 8px 15px;
-    font-size: 0.9em;
-    border: 1px solid #111;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 0.3em;
-    -o-border-radius: 0.3em;
-    -webkit-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;
-    outline: none;
-  }
- #loginpop a span:hover{
-	background:#000;
-	 border: 1px solid #000;
-	 color:#fff;
- }
-/* Login Button */
-#loginButton { 
-    display:inline-block;  
-    position:relative;
-    z-index:30;
-    cursor:pointer;
-}
-/* Login Box */
-#loginBox {
-    position:absolute;
-    top: 56px;
-    right: 4px;
-    display:none;
-    z-index:29;
-}
-#loginForm:after {
-	content: '';
-    position: absolute;
-        right: 129px;
-    top: -13px;
-    border-left: 9px solid rgba(0, 0, 0, 0);
-    border-right: 10px solid rgba(0, 0, 0, 0);
-    border-bottom: 15px solid #FFFFFF;
-}
-/* Login Form */
-#loginForm {
-	  width: 300px;
-  background: #fff;
-  border: 1px solid #d6d6d6;
-  height: 251px;
-}
-#loginForm fieldset {
-    margin:0 0 15px 0;
-    display:block;
-    border:0;
-    padding:0;
-}
-fieldset#body {
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -o-border-radius:3px;
-    padding:15px 15px;
-    margin:0;
-}
-#loginForm #checkbox {
-    width:auto;
-    margin:3px 6px 0 0;
-    float:left;
-    padding:0;
-    border:0;
-}
+
 #body label {
    color:#34353a;
     margin:10px 0 0 0;
@@ -1258,8 +1159,8 @@ a.top-sign {
     color: #111;
     font-size: 1.25em;
 }
-/*--albums--*/
-.albums {
+/*--films--*/
+.films {
   padding: 4em 0 0 0;
 }
 .content-grid img {
@@ -1539,7 +1440,7 @@ h3.hd-tittle {
     margin: 0 1em;
 }
 /*--//music_right--*/
-/*--//albums--*/
+/*--//films--*/
 ul.footer_social {
 	padding: 0;
 	list-style: none;
@@ -3883,7 +3784,7 @@ text-decoration:none;
 		margin-left: 0;
 		    margin-bottom: 2em;
 	}
-	.albums.second {
+	.films.second {
 		padding: 1em 0 0 0;
 	}
 	h4.tittle {
