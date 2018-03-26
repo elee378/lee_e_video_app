@@ -7,7 +7,7 @@
     right: 0px;
     width:100%;
 }
-/* layout.css Style */
+/* layout style */
 .drop-zone-container{
     display: flex;
     max-width: 600px;
@@ -24,7 +24,7 @@
     width: 150px;
   }
   
-  /* skin.css Style*/
+  /* skin style*/
   .upload-drop-zone {
     color: #ccc;
     border-style: dashed;

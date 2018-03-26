@@ -8,24 +8,15 @@
 <link href="/assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
 <link href="/assets/css/style.css" rel='stylesheet' type='text/css' />
-<!-- Graph CSS -->
 <link href="/assets/css/font-awesome.css" rel="stylesheet"> 
-<!-- jQuery -->
-<!-- lined-icons -->
 <link rel="stylesheet" href="/assets/css/icon-font.css" type='text/css' />
 <link rel="stylesheet" href="/assets/css/vp.css" type='text/css' />
-
-<!-- //lined-icons -->
- <!-- Meters graphs -->
 <script src="/assets/js/jquery-2.1.4.js"></script>
 </head> 
-    	 <!-- /w3layouts-agile -->
+
  <body class="sticky-header left-side-collapsed"  onload="initMap()">
     <section>
-      <!-- left side start-->
 		<div class="left-side sticky-left-side">
-
-			<!--logo and iconic logo start-->
 			<div class="logo">
 				<h1><a href="index.html">V<span>Player</span></a></h1>
 			</div>
@@ -34,68 +25,24 @@
 			</div>
 
 			<div class="left-side-inner">
-				<!--sidebar nav start-->
 					<ul class="nav nav-pills nav-stacked custom-nav">
 						<li class="active"><a href="/"><i class="lnr lnr-home"></i><span>Home</span></a></li>
 						<li><a href="/categories"><i class="lnr lnr-indent-increase"></i> <span>Categories</span></a></li>						   
 					</ul>
-				<!--sidebar nav end-->
 			</div>
-		</div>
- 	 <!-- /w3l-agile -->
-		<!-- signup -->
-			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="sign-grids">
-								<div class="sign">
-									<div class="sign-right">
-										<form action="#" method="post">
-											<h3>Create your account </h3>
-											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-											
-											<input type="submit" value="CREATE ACCOUNT" >
-										</form>
-									</div>
-									<div class="clearfix"></div>								
-								</div>
-								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //signup -->
- 	 <!-- /w3l-agile -->
-		<!-- left side end-->
-		<!-- main content start-->
+		</div>		
 		<div class="main-content">
-			<!-- header-starts -->
 			<div class="header-section">
-			<!--toggle button start-->
 			<a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
-			<!--toggle button end-->
 			<div class="clearfix"></div>
 				</div>
-			<!-- //header-ends -->
- 	 <!-- /w3l-agileits -->
-		<!-- //header-ends -->
 			<div id="page-wrapper">
 				<div class="inner-content">				
 					  <div class="music-left">
 					  <h5 style="color:firebrick;font-weight:bolder"><%= videoPlay.title %></h5>
-					      <!--banner-section-->
 							<div class="banner-section">
 								<div class="banner">
 									 <div class="callbacks_container">
-																		<!--/video-main-->
 								 <div class="video-main">
 									<div class="video-record-list">
 										<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
@@ -127,8 +74,6 @@
 																</div>
 															</div>
 															<div class="jp-toggles">
-															
-															<!--<button class="jp-full-screen" role="button" tabindex="0" id="player-fullscreen">full screen</button> -->
 															</div>
 														</div>
 													</div>
@@ -138,26 +83,16 @@
 									</div>
 								</div>
 										</div>
-										<!--banner-->
 								<div class="clearfix"> </div>
 							</div>
 							<div class="video-details">
 								<div><%= videoPlay.videoDesc %></div>
 								<div class="star-rating">Ratings:<i class="fa fa-star"></i><i class="fa fa-star"></i>
-
 								<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-
-
-
 								</div>
-								
 							</div>
 						</div>	
-				<!--//End-banner-->
-					<!--albums-->
-					<!-- pop-up-box --> 
 							<link href="/assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
-					<!--//pop-up-box -->
 						<div class="albums">
 								<div class="tittle-head">
 									<h3 class="tittle">Top Videos</h3>
@@ -171,14 +106,10 @@
 <% }); %>
 							<div class="clearfix"> </div>
 										</div>
-					<!--//End-albums-->
-						<!--//discover-view-->
-						
 						<div class="albums second" style="padding-top:0px">
 										<div class="tittle-head">
 											<h3 class="tittle">Categories</h3>
 											<a href="/categories"><h5 class="tittle" style="text-align:right;color:firebrick">See All Categories</h5></a>
-
 											<div class="clearfix"> </div>
 										</div>
 										<% categories.forEach(function(category){ %>
@@ -189,45 +120,26 @@
 										<% }); %>
 											<div class="clearfix"> </div>
 									</div>
-								<!--//discover-view-->
 							</div>
-							<!--//music-left-->
-						    <!--/music-right-->
 						   <div class="music-right">
 							<div class="albums" style="padding-top:0px">
 								<div class="tittle-head">
 									<h5 class="tittle">Videos In category</h5>
-									<!-- <div class="clearfix"> </div> -->
 								</div>
 								<% videos.forEach(function(video){ %>
 								<div class="col-md-3 content-grid">
 										<a class="play-icon popup-with-zoom-anim" href="/videos/<%=video.videoId %>"><img src="<%=video.thumbnailSrc %>" title="allbum-name"></a>
 									</div>
-									
 							<% }); %>
 							<div class="clearfix"> </div>
-										</div>
-
-								<!-- script for play-list -->
-							<link href="/assets/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
-
-											<div class="clearfix"></div>
-			 
 							</div>
-						<!--body wrapper start-->
-						
-								</div>
+							<link href="/assets/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css">
 							<div class="clearfix"></div>
-						<!--body wrapper end-->
- 	 <!-- /w3l-agile -->
+							</div>
+							</div>
+							<div class="clearfix"></div>
 					</div>
-			  <!--body wrapper end-->
 			</div>
-        <!--footer section start-->
-
-        <!--footer section end-->
- 	 <!-- /w3l-agile -->
-      <!-- main content end-->
    </section>
   
 <!-- Bootstrap Core JavaScript -->
