@@ -67,52 +67,6 @@ function timeFormat(time){
     let seconds=Math.floor(time-minutes *60);
     return `${minutes}:${seconds}`;
 }
-//file upload
-console.log("iuygf");
-    // UPLOAD CLASS DEFINITION
-    // ======================
-    let dropZone = document.getElementById('drop-zone');
-    let uploadForm = document.getElementById('js-upload-form');
-    let jUpload=document.querySelectorAll('.jupload');
-    let uploadSubmit=document.getElementById('js-upload-submit');
-    let filesToupload={};
-    $(uploadSubmit).on('click',function(e){
-        e.preventDefault();
-        startUpload();
-    })
-    jUpload.forEach(element => {
-        element.ondragover=function(e){
-            this.className = 'upload-drop-zone drop';
-            return false;
-        }
-        element.ondrop=function(e){
-            e.preventDefault();
-            this.className = 'upload-drop-zone';
-            document.getElementById('test').value=e.dataTransfer.files;
-            let img=document.createElement('img');
-            img.src=e.dataTransfer.files;
-            this.innerHTML=img;
-            filesToupload[e.target.id]=e.dataTransfer.files; 
-        }
-        element.ondragleave=function(e){
-            this.className = 'upload-drop-zone';
-            return false;
-        }
-    });
-  
-    var startUpload = function() {
-        console.log(filesToupload);
-        let movieData=$('#js-upload-form').serializeArray();
-        console.log( document.getElementById('js-upload-form').files);
-    }
-    // if(uploadForm){
-    //     uploadForm.addEventListener('submit', function(e) {
-    //         var uploadFiles = document.getElementById('js-upload-files').files;
-    //         e.preventDefault()
-    
-    //         startUpload(uploadFiles)
-    //     });
-    // }
 
 
 
